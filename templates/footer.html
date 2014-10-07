@@ -1,3 +1,4 @@
+{% load static %}
 <footer class="p2pu-footer">
 
 	<div class="container">
@@ -33,7 +34,7 @@
 			<ul class="footer-links">
 				<li>
 					<i class="fa fa-angle-right "></i>
-					<a href="/en/terms/">
+					<a href="https://p2pu.org/en/terms/">
 						Terms of Use
 					</a>
 				</li>
@@ -45,7 +46,7 @@
 				</li>
 				<li>
 					<i class="fa fa-angle-right "></i>
-					<a href="/assets/uploads/P2PUMediaKit.pdf">
+					<a href="https://p2pu.org/assets/uploads/P2PUMediaKit.pdf">
 						Media Kit
 					</a>
 				</li>
@@ -60,8 +61,7 @@
 
 
 		<div class="pull-right col-md-3 cc-by-sa">
-			<img src="{{site.baseurl}}/img/cc-icons.png" alt="CC-BY-SA Icon">
-
+			<img src="{% static 'images/cc-icons.png' %}" alt="CC-BY-SA Icon">
 			<p>
 				Unless otherwise noted, all the materials on this site are licensed under a
 				<a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">
