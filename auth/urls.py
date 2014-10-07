@@ -10,3 +10,9 @@ urlpatterns = patterns('',
     url(r'^accounts/', include('allauth.urls')),
     url(r'^o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
 )
+
+from django.conf import settings
+
+urlpatterns += patterns('',
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+)
